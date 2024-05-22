@@ -1,0 +1,31 @@
+﻿@ToDo_HostAddress = https://localhost:32768
+
+GET {{ToDo_HostAddress}}/todoitems
+
+###
+@TodoApi_HostAddress = https://localhost:32768
+
+Post {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk bird",
+  "isComplete":true
+}
+
+###
+
+GET {{ToDo_HostAddress}}/users
+
+###
+
+POST {{ToDo_HostAddress}}/users
+Content-Type: application/json
+
+{
+        "name":"Filipe",
+        "email":"filipe@gmail.com",
+        "password":"germancano",
+        "isAdm":true
+}
+###
